@@ -1,0 +1,188 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 50px 50px;
+}
+
+.container h1 {
+  color: #191a19;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.container p {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .Date {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .conversion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 100px;
+}
+
+.container .conversion .input-group1 {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding: 5px 30px;
+}
+
+.container .conversion .input-group1 .input {
+  padding: 5px 30px;
+  text-align: center;
+  background-color: cadetblue;
+  border-radius: 4px;
+  font-size: 18px;
+  border-color: cornsilk;
+}
+
+.container .conversion .input-group2 {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 5px 30px;
+}
+
+.container .conversion .input-group2 .output {
+  padding: 5px 30px;
+  text-align: center;
+  background-color: cadetblue;
+  border-radius: 4px;
+  font-size: 18px;
+  border-color: cornsilk;
+}
+
+.container .conversion .to {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.container .conversion .to h3 {
+  font-size: 30px;
+}
+
+.container .inputVal {
+  margin: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .inputVal .input-group.mb-3 {
+  padding: 5px 0px;
+  width: 80%;
+}
+
+.container .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .submit #submit {
+  text-align: center;
+  padding: 7px 35px;
+  text-align: center;
+  background-color: cadetblue;
+  border-radius: 4px;
+  font-size: 16px;
+  border-color: cornsilk;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.container .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 10px;
+}
+
+.container .result .input-group.mb-3 {
+  padding: 5px 0px;
+  width: 80%;
+}
+
+.container .changebackground {
+  margin: 10px 10px;
+}
+
+.container .changebackground h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.container .changebackground .colorIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .changebackground .colorIn .input-group.mb-3 {
+  padding: 10px 0px;
+  width: 80%;
+}
+
+.container .changebackground .change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .changebackground .change #backgroundChange {
+  background-color: cadetblue;
+  color: black;
+  font-weight: bold;
+  padding: 5px 30px;
+}
+/*# sourceMappingURL=style.css.map */
