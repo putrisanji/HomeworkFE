@@ -1,77 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Temperature</title>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <div class="outer">
+      <div class="container">
         <h1>TEMPERATURE CONVERTER</h1>
-        <p>tanggal</p>
         <div class="Date">
-            <script type='text/javascript'>
-                var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-                var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
-                var date = new Date();
-                var day = date.getDate();
-                var month = date.getMonth();
-                var thisDay = date.getDay(),
-                    thisDay = myDays[thisDay];
-                var yy = date.getYear();
-                var year = (yy < 1000) ? yy + 1900 : yy;
-                document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);      
-            </script>
+          <script type="text/javascript">
+            var months = [
+              "Januari",
+              "Februari",
+              "Maret",
+              "April",
+              "Mei",
+              "Juni",
+              "Juli",
+              "Agustus",
+              "September",
+              "Oktober",
+              "November",
+              "Desember",
+            ];
+            var myDays = [
+              "Minggu",
+              "Senin",
+              "Selasa",
+              "Rabu",
+              "Kamis",
+              "Jum&#39;at",
+              "Sabtu",
+            ];
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth();
+            var thisDay = date.getDay(),
+              thisDay = myDays[thisDay];
+            var yy = date.getYear();
+            var year = yy < 1000 ? yy + 1900 : yy;
+            document.write(
+              thisDay + ", " + day + " " + months[month] + " " + year
+            );
+          </script>
         </div>
-        <h2>Ready Convert</h2>
-        <div class="conversion">
-            <div class="input-group1">
-                <select class="input" id="inputGroupSelect01">
-                    <option  value="celcius">Celcius</option>
-                    <option  value="farenheit">Farenheit</option>
-                    <option  value="reamure">Reamure</option>
-                </select>
-            </div>
-            <div class="to">
-                <h3>to</h3>
-            </div>
-            <div class="input-group2">
-                <select class="output" id="inputGroupSelect01">
-                    <option  value="celcius">Celcius</option>
-                    <option  value="farenheit">Farenheit</option>
-                    <option  value="reamure">Reamure</option>
-                </select>
-            </div>
+        <h2>Ready to Convert</h2>
+        <div class="d-flex justify-content-center">
+          <div class="p-2">
+            <select class="input" id="inputGroupSelect01">
+              <option class="input" value="celcius">Celcius</option>
+              <option class="input" value="farenheit">Farenheit</option>
+              <option class="input" alue="reamure">Reamure</option>
+            </select>
+          </div>
+          <div class="p-2">
+            <h2>to</h2>
+          </div>
+          <div class="p-2">
+            <select class="output" id="inputGroupSelect02">
+              <option class="output" value="celcius">Celcius</option>
+              <option class="output" value="farenheit">Farenheit</option>
+              <option class="output" value="reamure">Reamure</option>
+            </select>
+          </div>
         </div>
-        <div class="inputVal">
-            <div class="input-group mb-3">
-                <input type="number" id="TemperatureIn" value="" class="form-control" aria-describedby="basic-addon3">
-            </div>     
+        <div class="d-flex justify-content-center">
+          <div class="p-2" >
+            <input
+              type="number"
+              id="TemperatureIn"
+              value=""
+              class="form-control"
+              aria-describedby="basic-addon3"
+            />
+          </div>
+          <div class="p-2" >
+            <input
+              id="submit"
+              class="btn btn-primary"
+              type="button"
+              value="="
+              onclick="convertThep()"
+            />
+          </div>
+          <div class="p-2">
+            <input
+            type="number"
+            id="TemperatureOut"
+            value=""
+            class="form-control"
+            aria-describedby="basic-addon3"
+          />
+          </div>
         </div>
-         <div class="submit">
-            <input id = "submit" class="btn btn-primary" type="button" value="Convert" onclick="convertThep()">
-        </div> 
-        <div class="result">
-            <div class="input-group mb-3">
-                <input type="number" id="TemperatureOut" value ="" class="form-control" aria-describedby="basic-addon3">
-            </div>
-        </div>
-        <div class="changebackground">
-            <h2><span><img src="https://img.icons8.com/dotty/80/000000/low-importance.png" height="40px"/></span> Ubah Warna Background (HEX) <span><img src="https://img.icons8.com/dotty/80/000000/low-importance.png" height="40px"/></span></h2>
-            <div class="colorIn">
-                <div class="input-group mb-3">
-                    <input id="color" type="text" class="form-control" aria-describedby="basic-addon3">
-                </div>
-            </div>
-            <div class="change">
-                <input id = "backgroundChange" class="btn btn-primary" type="button" value="Change Background"onclick="changeBackground()">  
-            </div>
-            
-        </div>
+        <p>Change Your Background Color</p>
+        <div class="d-flex">
+          <div class="p-2 w-100" >
+            <input
+            id="color"
+            type="text"
+            class="form-control"
+            aria-describedby="basic-addon3"
+          />
+  
+          </div>
+          <div class="p-2">
+            <input
+            id="backgroundChange"
+            class="btn btn-primary"
+            type="button"
+            value="Change"
+            onclick="changeBackground()"
+          />
+          </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

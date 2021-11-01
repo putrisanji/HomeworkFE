@@ -1,188 +1,116 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: auto;
+  padding: auto;
 }
 
 a {
   text-decoration: none;
 }
 
+.outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  height: 100vh;
+}
+
 .container {
-  margin: 50px 50px;
+  margin: auto;
+  width: 40%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+          box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .container h1 {
   color: #191a19;
   text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container h2 {
+  font-size: 10px;
+  text-align: center;
   font-weight: bold;
 }
 
 .container p {
-  color: black;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.container h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
-  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
   font-weight: bold;
+  text-align: center;
 }
 
 .container .Date {
-  font-size: 35px;
+  font-size: 12px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
-.container .conversion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 100px;
+.container .d-flex.justify-content-center .p-2 .input {
+  background-color: #193a4b;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
 }
 
-.container .conversion .input-group1 {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  padding: 5px 30px;
+.container .d-flex.justify-content-center .p-2 .output {
+  background-color: #193a4b;
+  border-color: none;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
 }
 
-.container .conversion .input-group1 .input {
-  padding: 5px 30px;
-  text-align: center;
-  background-color: cadetblue;
-  border-radius: 4px;
-  font-size: 18px;
-  border-color: cornsilk;
-}
-
-.container .conversion .input-group2 {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  padding: 5px 30px;
-}
-
-.container .conversion .input-group2 .output {
-  padding: 5px 30px;
-  text-align: center;
-  background-color: cadetblue;
-  border-radius: 4px;
-  font-size: 18px;
-  border-color: cornsilk;
-}
-
-.container .conversion .to {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-.container .conversion .to h3 {
-  font-size: 30px;
-}
-
-.container .inputVal {
-  margin: 10px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .inputVal .input-group.mb-3 {
-  padding: 5px 0px;
-  width: 80%;
-}
-
-.container .submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .submit #submit {
-  text-align: center;
-  padding: 7px 35px;
-  text-align: center;
-  background-color: cadetblue;
-  border-radius: 4px;
+.container .d-flex.justify-content-center .p-2 h2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
   font-size: 16px;
-  border-color: cornsilk;
-  color: black;
-  margin-bottom: 10px;
+}
+
+.container .d-flex.justify-content-center .p-2 .btn.btn-primary {
+  margin-top: 3px;
+  font-size: 12px;
+  border-color: #023047;
+  background-color: #023047;
+  color: white;
   font-weight: bold;
+  padding: auto;
 }
 
-.container .result {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px 10px;
-}
-
-.container .result .input-group.mb-3 {
-  padding: 5px 0px;
-  width: 80%;
-}
-
-.container .changebackground {
-  margin: 10px 10px;
-}
-
-.container .changebackground h2 {
-  font-size: 20px;
-  margin-top: 5px;
-}
-
-.container .changebackground .colorIn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .changebackground .colorIn .input-group.mb-3 {
-  padding: 10px 0px;
-  width: 80%;
-}
-
-.container .changebackground .change {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .changebackground .change #backgroundChange {
-  background-color: cadetblue;
-  color: black;
+.container .d-flex .btn.btn-primary {
+  margin-top: 3px;
+  font-size: 12px;
+  border-color: #023047;
+  background-color: #023047;
+  color: white;
   font-weight: bold;
-  padding: 5px 30px;
+  padding: auto;
 }
 /*# sourceMappingURL=style.css.map */

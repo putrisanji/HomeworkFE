@@ -31,9 +31,7 @@ class temperatureConverter{
     
 }
 
-
 const temperatureConvert = new temperatureConverter();
-
 
 function convertThep(){
     let inputTemp = document.querySelector(".input")
@@ -49,28 +47,6 @@ function convertThep(){
     let input = inputTemp.value;
     let output = outputTemp.value;
     let inputVal = Number(inputValue.value);
-
-    //opsi jika langsung memasukkan oprasi konversi
-
-    // if (input === "celcius" && output ==="farenheit"){
-    //     outputValue.value = (inputVal*1.8)+32;
-    // }else if (input === "celcius" && output ==="reamure"){
-    //     outputValue.value = inputVal*0.8;
-    // }else if (input === "celcius" && output ==="celcius"){
-    //     outputValue.value= inputVal;
-    // }else if (input === "farenheit" && output ==="celcius"){
-    //      outputValue.value = (inputVal-32)*5/9;
-    // }else if (input === "farenheit" && output ==="reamure"){
-    //      outputValue.value = (inputVal-32)*4/9;
-    // }else if (input === "farenheit" && output ==="farenheit"){
-    //      outputValue.value= inputVal;
-    // }else if (input === "reamure" && output ==="celcius"){
-    //      outputValue.value = (4*inputVal)/5;
-    // }else if (input === "reamure" && output ==="farenheit"){
-    //      outputValue.value = ((inputVal*9)/4)+32;
-    // }else{
-    //      outputValue.value= inputVal;
-    // }
   
 
     if (input === "celcius" && output ==="farenheit"){
@@ -101,16 +77,6 @@ function changeBackground(){
     document.body.style.backgroundColor= color;
 }
 
-//eksport
-//module.exports= temperatureConvert.celciusFarenheit;
-// module.exports = temperatureConvert.celciusReamure;
-// module.exports = temperatureConvert.celciusCelius;
-// module.exports = temperatureConvert.farenheitCelcius;
-// module.exports = temperatureConvert.farenheitReamur;
-// module.exports = temperatureConvert.farenheitFarenheit;
-// module.exports = temperatureConvert.reamureCelcius;
-// module.exports = temperatureConvert.reamureFarenheit;
-// module.exports = temperatureConvert.reamureReamure;
 
 
 

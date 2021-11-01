@@ -1,144 +1,101 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: auto;
+  padding: auto;
 }
-  
+
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
 }
 
-.container{
-    margin: 50px 50px;
-   
-    h1{
-        color:#191a19;
-        text-align: center;
-        font-size:  40px;
-        margin-bottom: 10px;
+.container {
+  margin: auto;
+  width: 40%;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+  h1 {
+    color: #191a19;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .Date {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .d-flex.justify-content-center {
+    .p-2 {
+      .input {
+        background-color: #193a4b;
+        color:white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 14px;
+      }
+      .output {
+        background-color: #193a4b;
+        border-color: none;
+        color:white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 14px;
+      }
+      h2 {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+      .btn.btn-primary {
+        margin-top: 3px;
+        font-size: 12px;
+        border-color: #023047;
+        background-color: #023047;
+        color: white;
         font-weight: bold;
-
+        padding: auto;
+      }
     }
-    p{
-        color:black;
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 10px;
+  }
+  .d-flex {
+    .btn.btn-primary {
+      margin-top: 3px;
+      font-size: 12px;
+      border-color: #023047;
+      background-color:#023047;
+      color: white;
+      font-weight: bold;
+      padding: auto;
     }
-    h2{
-        font-size: 20px;
-        margin-bottom: 5px;
-        text-align: center;
-        font-weight: bold;
 
-    }
-    .Date{
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .conversion{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 20px 100px;
-
-        .input-group1{
-            justify-content: right;
-            padding: 5px 30px;
-            .input{
-                padding: 5px 30px;
-                text-align: center;
-                background-color: cadetblue;
-                border-radius: 4px;
-                font-size: 18px;
-                border-color: cornsilk;
-            }
-
-        }
-        .input-group2{
-            justify-content: left;
-            padding: 5px 30px;
-            .output{
-                padding: 5px 30px;
-                text-align: center;
-                background-color: cadetblue;
-                border-radius: 4px;
-                font-size: 18px;
-                border-color: cornsilk;
-            }
-
-        }
-        .to {
-            align-content: flex-end;
-
-            
-            h3{
-                font-size: 30px;
-            }
-        }
-
-
-
-    }
-    .inputVal{
-        margin:10px 10px;
-        display: flex;
-        justify-content: center;
-        .input-group.mb-3{
-            padding: 5px 0px;
-            width: 80%;
-        }
-    }
-    .submit{
-        display: flex;
-        justify-content: center;
-        #submit{
-            text-align: center;
-            padding: 7px 35px;
-            text-align: center;
-            background-color: cadetblue;
-            border-radius: 4px;
-            font-size: 16px;
-            border-color: cornsilk;
-            color: black;
-            margin-bottom: 10px;  
-            font-weight: bold;  
-        }
-    }
-    .result{
-        display: flex;
-        justify-content: center;
-        margin:10px 10px;
-        .input-group.mb-3{
-            padding: 5px 0px;
-            width: 80%;
-        }
-    }
-    .changebackground{
-        margin:10px 10px;
-        h2{
-            font-size: 20px;
-            margin-top: 5px;
-        }
-        .colorIn{
-            display: flex;
-            justify-content: center;
-            .input-group.mb-3{
-                padding: 10px 0px;
-                width: 80%;
-            }
-        }
-        .change{
-            display: flex;
-            justify-content: center;
-
-            #backgroundChange{
-                background-color: cadetblue;
-                color: black;
-                font-weight: bold;
-                padding: 5px 30px;
-            }
-        }
-    }
+  }
 }
