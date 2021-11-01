@@ -4,6 +4,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "npm run build"
+    "build":"npm run bulid"
   }
 }
